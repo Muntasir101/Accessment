@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="17260" started-at="2020-10-07T19:25:26 BDT" finished-at="2020-10-07T19:25:44 BDT">
+    <groups>
+    </groups>
+    <test name="PayStatementTest" duration-ms="17260" started-at="2020-10-07T19:25:26 BDT" finished-at="2020-10-07T19:25:44 BDT">
+      <class name="com.payse.tcase.TC_Statement_002">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.payse.tcase.TC_Statement_002@59906517]" name="setup" is-config="true" duration-ms="4511" started-at="2020-10-07T19:25:26 BDT" finished-at="2020-10-07T19:25:31 BDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="PyBankStatement()[pri:0, instance:com.payse.tcase.TC_Statement_002@59906517]" name="PyBankStatement" duration-ms="7775" started-at="2020-10-07T19:25:31 BDT" finished-at="2020-10-07T19:25:39 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PyBankStatement -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.payse.tcase.TC_Statement_002@59906517]" name="teardown" is-config="true" duration-ms="4845" started-at="2020-10-07T19:25:39 BDT" finished-at="2020-10-07T19:25:44 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.payse.tcase.TC_Statement_002 -->
+    </test> <!-- PayStatementTest -->
+  </suite> <!-- Suite -->
+</testng-results>
