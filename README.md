@@ -17,3 +17,8 @@ Demo project Test Automation. Using docker-compose run this web application.
 - Firefox or Chrome browser installed.
 - Run this Automation Test using testng.xml
 - You will get test report in Test Output folder. 
+
+#Task Report
+- Test scenario listed in wiki
+- Test Descriotion added in wiki
+- Sample Bug report attached here. 
