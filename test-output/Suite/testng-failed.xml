@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
   <listeners>
     <listener class-name="com.payse.extra.Report"/>
   </listeners>
-  <test thread-count="5" name="PayStatementTest(failed)">
+  <test thread-count="3" name="PayStatementTest(failed)" parallel="methods">
     <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="com.payse.tcase.TC_Statement_002">
+      <class name="com.payse.tcase.TC_Statement_001">
         <methods>
           <include name="PyBankStatement"/>
           <include name="teardown"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.payse.tcase.TC_Statement_002 -->
+      </class> <!-- com.payse.tcase.TC_Statement_001 -->
     </classes>
   </test> <!-- PayStatementTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
