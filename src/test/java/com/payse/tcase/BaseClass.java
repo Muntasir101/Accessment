@@ -31,6 +31,8 @@ import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.pdf.PdfWriter;
 import com.payse.extra.ReadConfig;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class BaseClass {
 
 	ReadConfig readconfig = new ReadConfig();
@@ -43,14 +45,14 @@ public class BaseClass {
 	public void setup(String br) 
 	{
 
-		if (br.equals("firefox")) {
-			System.setProperty("webdriver.gecko.driver", readconfig.getfirefoxpath());
+		if (br.equals("firefox")) {			
+			WebDriverManager.firefoxdriver().setup();			
 			FirefoxOptions opt = new FirefoxOptions();
 			opt.setAcceptInsecureCerts(true);
 			driver = new FirefoxDriver();
 		} 
 		else if (br.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", readconfig.getchromepath());
+			WebDriverManager.chromedriver().setup();
 			ChromeOptions opt = new ChromeOptions();
 			opt.setAcceptInsecureCerts(false);
 			driver = new ChromeDriver();

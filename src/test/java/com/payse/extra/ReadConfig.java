@@ -24,14 +24,5 @@ public class ReadConfig {
 		return Url;
 	}
 
-	public String getchromepath() {
-		String cpath = pro.getProperty("chromepath");
-		return cpath;
-	}
-
-	public String getfirefoxpath() {
-		String fpath = pro.getProperty("firefoxpath");
-		return fpath;
-	}
 
 }
